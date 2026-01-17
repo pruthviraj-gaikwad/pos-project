@@ -1,0 +1,76 @@
+# =========================
+# Spring Boot Git Ignore
+# =========================
+
+
+# --- Gradle ---
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+gradlew
+gradlew.bat
+
+# --- Logs ---
+*.log
+logs/
+*.out
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- IntelliJ IDEA ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# --- Eclipse / Spring Tool Suite (STS) ---
+.classpath
+.project
+.settings/
+.apt_generated/
+.factorypath/
+.springBeans/
+.sts4-cache/
+
+# --- NetBeans ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- VS Code ---
+.vscode/
+
+# --- Test Reports ---
+test-output/
+surefire-reports/
+jacoco.exec
+
+# --- Environment Files ---
+.env
+*.env
+
+# --- Other ---
+*.swp
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# --- Generated Files ---
+/bin/
+/build/
+
+# --- Database Files ---
+*.h2.db
+*.mv.db
+
+# --- Local Configuration Files ---
+application-local.properties
+application-dev.properties

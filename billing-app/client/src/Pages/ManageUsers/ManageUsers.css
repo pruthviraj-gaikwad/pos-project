@@ -1,0 +1,30 @@
+.user-container{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: calc(100vh - 5rem);
+    padding: 20px;
+    gap: 10px;
+    background-color: #2C3335;
+}
+
+.left-column{
+    flex: 0.7;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.right-column{
+    flex: 0.3;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}

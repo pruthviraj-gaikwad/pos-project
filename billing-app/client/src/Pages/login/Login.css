@@ -1,0 +1,132 @@
+.login-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7), /* Lighter overlay for a brighter feel */
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../../assets/images/Background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  /* Subtle animation for background to make it more dynamic */
+  animation: backgroundPan 30s infinite alternate linear;
+}
+
+@keyframes backgroundPan {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.card {
+  background-color: #ffffff; /* Pure white background for the card */
+  width: 90%; /* Make it slightly more responsive on smaller screens */
+  max-width: 380px; /* **Smaller max-width for a more compact size** */
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Very subtle light border */
+  border-radius: 12px; /* More rounded corners for a modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer, more spread out shadow */
+  overflow: hidden; /* Ensures no content spills out of rounded corners */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow on hover */
+}
+
+.card-body {
+  padding: 1.8rem 1.5rem; /* **Reduced padding for a smaller overall size** */
+}
+
+.card-title {
+  font-size: 1.8rem; /* **Slightly smaller font size for the title** */
+  color: #333333; /* Darker text for better contrast */
+  font-weight: 700; /* Bolder title */
+  margin-bottom: 0.5rem; /* Reduce space below title */
+}
+
+.card-text {
+  font-size: 0.85rem; /* **Smaller font size for the descriptive text** */
+  color: #666666; /* Softer grey for subtext */
+  margin-bottom: 1.5rem; /* Adjust spacing */
+}
+
+.form-label {
+  font-size: 0.8rem; /* **Smaller font size for labels** */
+  color: #555555;
+  margin-bottom: 0.3rem; /* Reduce space below labels */
+}
+
+.form-control {
+  font-size: 0.9rem; /* **Smaller font size for input fields** */
+  padding: 0.75rem 1rem; /* Adjust padding for smaller inputs */
+  border-radius: 8px; /* Slightly more rounded input fields */
+  border: 1px solid #e0e0e0; /* Light border for inputs */
+  background-color: #f9f9f9; /* Off-white background for inputs */
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #88bbff; /* Lighter blue focus border */
+  box-shadow: 0 0 0 0.2rem rgba(136, 187, 255, 0.25); /* Lighter blue shadow on focus */
+  background-color: #ffffff; /* White background on focus */
+}
+
+.btn-dark {
+  background-color: #4a4a4a; /* Slightly lighter dark for the button */
+  border-color: #4a4a4a;
+  font-size: 1rem; /* **Standard font size for button for readability** */
+  padding: 0.8rem 1.5rem; /* Adjust button padding */
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+  background-color: #333333; /* Darker on hover */
+  border-color: #333333;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-dark:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Overlay background */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup card styling */
+.popup-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    position: relative;
+}
+
+/* Close button styling */
+.popup-card .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
